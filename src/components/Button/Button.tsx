@@ -1,25 +1,24 @@
-import { Component, h } from '@stencil/core';
-//Prop, h, Event, EventEmitter;
+import { Component, h, Prop, Event, EventEmitter } from '@stencil/core';
 @Component({
   tag: 'my-button',
   styleUrl: 'Button.css',
   shadow: true,
 })
 export class Button {
-  // @Prop() buttonText: string;
-  // @Prop() buttonDisabled: boolean;
-  // @Prop() buttonType: string;
-  // @Prop() buttonStyle: string;
-  // @Event({ bubbles: true, composed: true }) buttonClicked: EventEmitter;
+  @Prop() buttonText: string;
+  @Prop() buttonType: string;
+  @Prop() buttonStyle: string;
+  @Prop() buttonDisabled: boolean;
+  @Event({ bubbles: true, composed: true }) buttonClicked: EventEmitter;
 
-  // onButtonClick() {
-  //   this.buttonClicked.emit();
-  // }
+  onButtonClick() {
+    this.buttonClicked.emit();
+  }
 
   render() {
     return (
-      <button>
-        <slot></slot>
+      <button class={this.buttonStyle} disabled={this.buttonDisabled} onClick={this.onButtonClick.bind(this)}>
+        {this.buttonText}
       </button>
     );
   }

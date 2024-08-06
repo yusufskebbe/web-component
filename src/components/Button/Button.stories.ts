@@ -10,6 +10,9 @@ export default {
   },
 
   argTypes: {
+    buttonText: {
+      control: { type: 'text' },
+    },
     buttonType: {
       control: { type: 'radio' },
       options: ['submit', 'button'],
@@ -23,17 +26,26 @@ export default {
     },
   },
 };
-
-const Template = () => `
-  <my-button >My button 1</my-button>`;
-
-//{ buttonText, buttonType, buttonStyle, buttonDisabled } template function parametere
-//button-text="${buttonText}" button-type="${buttonType}" button-style="${buttonStyle}" button-disabled="${buttonDisabled}" button properties
+const Template = argTypes => `
+  <my-button button-text="${argTypes.buttonText}" button-type="${argTypes.buttonType}" button-style="${argTypes.buttonStyle}" button-disabled="${argTypes.buttonDisabled}"></my-button>`;
 
 export const Default = Template.bind({});
 Default.args = {
-  buttonText: 'Default',
+  buttonText: 'Button Text',
   buttonType: 'submit',
   buttonStyle: 'primary',
-  buttonDisabled: 'false',
+};
+
+export const Danger = Template.bind({});
+Danger.args = {
+  buttonText: 'Button Text',
+  buttonType: 'submit',
+  buttonStyle: 'danger',
+};
+
+export const Success = Template.bind({});
+Success.args = {
+  buttonText: 'Button Text',
+  buttonType: 'submit',
+  buttonStyle: 'success',
 };
