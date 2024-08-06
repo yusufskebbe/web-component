@@ -62,6 +62,7 @@
     "lit": "^3.1.4",
     "puppeteer": "^21.9.0",
     "storybook": "^8.2.7",
+    "storybook-addon-stencil": "^0.2.1",
     "typescript": "^5.5.4"
   },
   "license": "MIT"
