@@ -1,0 +1,40 @@
+:host {
+  display: block;
+}
+button {
+  width: fit-content;
+  border-radius: 10px;
+  background-color: #177fc3;
+  color: white;
+  padding: 8px 20px 8px 20px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  transform: scale(1.04);
+}
+button.primary {
+  background-color: #2e8cc9;
+}
+
+button:disabled {
+  background-color: #dadcdc;
+}
+button.outlined {
+  background-color: white;
+  border: 2px solid #177fc3;
+  color: #177fc3;
+}
+
+button.danger {
+  background-color: #ee1e53;
+  color: #ffff;
+}
+button.success {
+  background-color: #2eae4a;
+  color: #ffff;
+}

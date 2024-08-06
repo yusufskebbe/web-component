@@ -1,5 +1,5 @@
 {
-  "name": "button-test",
+  "name": "paytr-button-test",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
@@ -32,19 +32,36 @@
     "loader/"
   ],
   "scripts": {
-    "build": "stencil build",
+    "build": "stencil build --docs --watch",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
     "@stencil/core": "^4.7.0",
+    "@storybook/addon-actions": "^8.2.7",
+    "@storybook/addon-essentials": "^8.2.7",
+    "@storybook/addon-links": "^8.2.7",
+    "@storybook/addons": "^7.6.17",
+    "@storybook/blocks": "^8.2.7",
+    "@storybook/react": "^8.2.7",
+    "@storybook/test": "^8.2.7",
+    "@storybook/web-components": "^8.2.7",
+    "@storybook/web-components-vite": "^8.2.7",
     "@types/jest": "^29.5.6",
-    "@types/node": "^16.18.11",
+    "@types/node": "^16.18.104",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "jest": "^29.7.0",
     "jest-cli": "^29.7.0",
-    "puppeteer": "^21.9.0"
+    "lit": "^3.1.4",
+    "puppeteer": "^21.9.0",
+    "storybook": "^8.2.7",
+    "typescript": "^5.5.4"
   },
   "license": "MIT"
 }
