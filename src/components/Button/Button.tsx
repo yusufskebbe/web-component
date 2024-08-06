@@ -1,5 +1,5 @@
-import { Component, Prop, h, Event, EventEmitter } from '@stencil/core';
-
+import { Component, h } from '@stencil/core';
+//Prop, h, Event, EventEmitter;
 @Component({
   tag: 'my-button',
   styleUrl: 'Button.css',
