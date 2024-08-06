@@ -25,15 +25,7 @@ export default {
 };
 
 const Template = ({ buttonText, buttonType, buttonStyle, buttonDisabled }) => `
-  <my-button 
-    button-text="${buttonText}" 
-    button-type="${buttonType}" 
-    button-style="${buttonStyle}"
-    button-disabled="${buttonDisabled}"
-
-    >
-  </my-button>
-`;
+  <my-button button-text="${buttonText}" button-type="${buttonType}" button-style="${buttonStyle}" button-disabled="${buttonDisabled}"></my-button>`;
 
 export const Default = Template.bind({});
 Default.args = {
