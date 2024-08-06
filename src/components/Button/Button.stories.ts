@@ -10,10 +10,9 @@ const meta: Meta = {
   parameters: {
     layout: 'fullscreen',
   },
-  render: (args: Components.MyButton) =>
-    html`<my-button button-text="${args.buttonText}" button-type="${args.buttonType}" button-style="${args.buttonStyle}" button-disabled="${args.buttonDisabled}"></my-button>`,
+  render: (args: Components.MyButton) => html`<my-button>Anıl button</my-button>`,
 };
-
+//button-text="${args.buttonText}" button-type="${args.buttonType}" button-style="${args.buttonStyle}" button-disabled="${args.buttonDisabled}"
 export default meta;
 
 type Story = StoryObj<Components.MyButton>;
