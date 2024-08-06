@@ -12,6 +12,6 @@ export default {
 
 export const Template = () => `
   <my-text>
-    text is here
+    text is here I change it now 
   </my-text>
 `;

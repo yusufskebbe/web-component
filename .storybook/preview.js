@@ -1,5 +1,5 @@
 import { defineCustomElements } from '../loader';
-defineCustomElements();
+defineCustomElements(window);
 
 /** @type { import('@storybook/web-components').Preview } */
 const preview = {
